@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML BASIC</title>
+    <meta name="robots" content ="index,noodp">
+    <meta name="description" content="This web page have the form layout">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="og:title" property="og:title" content="Principal form layout">
+    <meta name="twitter:card" content="summary">
+    <link rel="alternate" hreflang="es" href="https://pushdev.co/">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>PUSH DEV</h1>        
+    </header>
+    <main>
+        <article>
+            <section>
+                <h4>FORM</h4>
+                <form id="contact_form">
+                    <fieldset>
+                        <legend>Please enter your contact details</legend>
+                            <label for="user_name">Your name:
+                                <input type="text" id="user_name" name="Name" aria-required="true">
+                                <abbr title="required">*</abbr>
+                            </label>
+                            <label for="email_this">E-mail address
+                                <input id="email_this" name="Email" aria-required="true" >
+                                <abbr title="required">*</abbr>
+                            </label>
+                            <label for="user_phone_number">Phone number (+57)
+                                <input id="user_phone_number" name="Phone Number">
+                            </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Please select the courses thar are you interested in
+                            <abbr title="required">*</abbr>
+                        </legend>     
+                        <div id="course" >
+                            <input type="checkbox" id="taste_1" name="taste_web" value=" Web Developer ">
+                            <label for="taste_1">Web Developer</label>
+                            <input type="checkbox" id="taste_2" name="taste_react" value=" React Developer ">
+                            <label for="taste_2">React Developer</label>
+                            <input type="checkbox" id="taste_3" name="taset_fullstack" value=" Fullstack Developer">
+                            <label for="taste_3">Fullstack Developer</label>
+                            <input type="checkbox" id="taste_4" name="taste_other" value=" Other">
+                            <label for="taste_4">Other</label>
+                        </div>            
+                    </fieldset>
+                    <label for="text-box">Please enter a message</label>
+                    <div>
+                        <textarea name="message" id="text-box" cols="40" rows="10"></textarea>
+                    </div>
+                    <button>Send mesagge</button>
+                    <button type="reset">Reset form</button>
+                    <li id="paragraph"></li>
+                </form>
+            </section>
+        </article>
+    </main>             
+    <footer>
+        <p>This example was created <time datetime="2020-04-12 11:21">at 11:21 AM</time></p>
+    </footer>
+    <script src="form.js"></script>
+</body>
+</html>
